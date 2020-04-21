@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=script.js></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form action="/action_page.php">
+        <label for="id">Käyttäjä ID:</label>
+        <input type="text" id="id" name="text" minlength="6" required>
+<br>
+        <label for="id">Salasana:</label>
+        <input type="text" id="id" name="text" onkeyup="CheckPasswordStrength(this.value)" required>
+        <span id="password_strength"></span>
+        <br>
+      <label for="id">Nimi:</label>
+      <input type="text" id="id" name="text" required>
+      <br>
+    <label for="id">Osoite:</label>
+    <input type="text" id="id" name="text" required>
+    <br>
+  <label for="cars">Maa:</label>
+  <br>
+  <select id="cars" required>
+    <option value="fin">Valitse...</option>
+    <option value="fin">Suomi</option>
+    <option value="swe">Ruotsi</option>
+    <option value="est">Viro</option>
+    <option value="rus">Venäjä</option>
+  </select>
+  <br>
+    <label>Postinumero:</label>
+    <input type="number"minlength="5" required>
+
+    <br>
+      <label for="email">Sähköposti:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+<input type="radio" id="male" name="gender" value="male" required>
+<label for="male">Mies</label>
+<input type="radio" id="female" name="gender" value="female" required>
+<label for="female">Nainen</label><br>
+<label>Kieli:</label>
+<label>
+    <input type="checkbox"> Suomi
+</label>
+<label>
+    <input type="checkbox"> Muu kuin suomi<br>
+    <label for="fname">Lisätietoja:</label>
+    <br><textarea rows="5" cols="25"></textarea>
+    <br>
+    <button>Lähetä</button>
+    
+</form>
+</div>
+</body>
+</html>
