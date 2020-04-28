@@ -54,3 +54,54 @@ function CheckPasswordStrength(password) {
         password_strength.innerHTML = strength;
         password_strength.style.color = color;
     }
+
+    
+    function validateForm() {
+        var x=document.forms["myForm"]["id2"].value;
+        if (x==null || x=="") {
+          alert("Käyttäjä ID on pakollinen!");
+          return false;
+        }
+    var y=document.forms["myForm"]["passwd"].value;
+    if (y==null || y=="") {
+      alert("Salasana on pakollinen!");
+      return false;
+    }
+    var z=document.forms["myForm"]["nimi"].value;
+    if (z==null || z=="") {
+      alert("Nimi on pakollinen!");
+      return false;
+    }
+    var u=document.forms["myForm"]["osoite"].value;
+    if (u==null || u=="") {
+      alert("Osoite on pakollinen!");
+      return false;
+    }
+    var cars= document.getElementById("cars");
+    if (cars.value == "fin2") {
+        //If the "Please Select" option is selected display error.
+        alert("Valitse joku maa!");
+        return false;
+    }
+    var a=document.forms["myForm"]["posti"].value;
+    if (a==null || a=="") {
+      alert("Postinumero on pakollinen!");
+      return false;
+    }
+    var t=document.forms["myForm"]["email"].value;
+    if (t==null || t=="") {
+      alert("Osoite on pakollinen!");
+      return false;
+    }
+    if (!$("input[name=gender]:checked").val()) {
+        alert('Valitse sukupuolesi!');
+        return false;
+     }
+     if (!$("input[name=kieli]:checked").val()) {
+        alert('Valitse kielesi!');
+        return false;
+     }
+}
+    
+ 
+
