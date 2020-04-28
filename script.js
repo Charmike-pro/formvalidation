@@ -90,7 +90,7 @@ function CheckPasswordStrength(password) {
     }
     var t=document.forms["myForm"]["email"].value;
     if (t==null || t=="") {
-      alert("Osoite on pakollinen!");
+      alert("Sähköposti on pakollinen!");
       return false;
     }
     if (!$("input[name=gender]:checked").val()) {
